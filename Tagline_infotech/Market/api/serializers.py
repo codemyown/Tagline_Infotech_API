@@ -15,6 +15,16 @@ class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
         fields = "__all__"
+        
+    
+    
+class RedirectSerializer(serializers.ModelSerializer):
+    user = UserSerializer(many = True,read_only = True)
+    class Meta:
+        model = Product
+        fields = "__all__"
+        
+    
     
 class  PurchaseSerializer(serializers.ModelSerializer):
     user = UserSerializer(many = True,read_only = True)
