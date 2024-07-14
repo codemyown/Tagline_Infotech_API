@@ -10,5 +10,13 @@ class ProductAdmin(admin.ModelAdmin):
 class PurchaseAdmin(admin.ModelAdmin):
     list_display = ["product","seller","buyer","purchase_price"]
 
+
+class PurchaseAdmin(admin.ModelAdmin):
+    list_display = ["product","seller","buyer","purchase_price"]
+
+
+
+class PurchaseAdmin(admin.ModelAdmin):
+    list_display = ["product","seller","buyer","purchase_price"]
 admin.site.register(Product,ProductAdmin)
 admin.site.register(Purchase,PurchaseAdmin)
