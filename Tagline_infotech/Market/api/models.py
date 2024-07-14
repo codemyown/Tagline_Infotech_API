@@ -3,8 +3,15 @@ from django.contrib.auth.models import User
 
 
 
-
-
+class Employee(models.Model):
+    name = models.CharField(max_length = 40)
+    role = models.CharField(max_length = 45)
+    salary = models.IntegerField(default= 0)
+    
+    
+    def __str__(self):
+        return self.name
+    
 class Product(models.Model):
     name = models.CharField(max_length =30)
     description = models.TextField()
