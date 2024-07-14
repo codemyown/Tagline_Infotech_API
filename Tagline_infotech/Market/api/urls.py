@@ -8,4 +8,5 @@ urlpatterns = [
     path("purchase/",PurchaseListView.as_view()),
     path("product/<int:pk>",ProductUpdateView.as_view()),
     path("purchase/<int:pk>",PurchaseUpdateView.as_view())
+    path("purchases/<int:pk>",PurchaseDeleteView.as_view())
 ]
